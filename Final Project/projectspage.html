@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Core Links + Font Awesome -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="font-awesome" href="/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Final Project</title>
+</head>
+<!--
+    Final Project Portfolio
+    Benjamin Weber
+    weberbj
+-->
+
+<!-- Projects Page -->
+
+<body>
+    <nav>
+        <ul>
+            <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+            <li class="item"><a href="homepage.html">Home</a></li>
+            <li class="item"><a href="resumepage.html">Resume</a></li>
+            <li class="item"><a href="projectspage.html">Projects</a></li>
+            <li class="item"><a href="apppage.html">App</a></li>
+            <li class="item"><a href="appage.html">Meals</a></li>
+        </ul>
+    </nav>
+
+    <article class="banner">
+        <div class="portrait">
+            <a href="homepage.html">
+                <img src="/images/personal_portrait.jpg" alt="picture of me">
+            </a>
+        </div>
+    </article>
+
+    <div class="container">
+
+        <article class="projects-area">
+
+            <h1 class="title">Projects</h1>
+            <aside>
+                <div class="project">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://github.com/kerenin95/Digital-Desktop-Personal-Assistant">
+                                    <img src="/images/personalassistant.jpg" alt="ai-personal-assistant">
+
+                                </a>
+                            </td>
+                            <td>
+                                <h2>Personal Assistant</h2>
+                                <p>A python personal assistant designed to increase productivity by allowing the user to
+                                    use speech commands with the system.
+
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="project">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://github.com/kerenin95/linux_debugger">
+                                    <img src="/images/bug.jpg" alt="bug">
+                                </a>
+                            </td>
+                            <td>
+                                <h2>Linux Debugger</h2>
+                                A linux debugger built in C++ designed to help detect inproper user input.
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="project">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://github.com/kerenin95/Guessing_Game">
+                                    <img src="/images/guess-the-number.png" alt="Number-guessing-game">
+                                </a>
+                            </td>
+                            <td>
+                                <h2>Number Guessing Game</h2>
+                                <p>A number guessing web app built in C#.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </aside>
+
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="email">
+            <h4>Email:</h4>
+            <a href="mailto:benweberswe@gmail.com">
+                <address>benweberswe@gmail.com</address>
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/ben.weber.509/"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://github.com/kerenin95"><i class="fab fa-github fa-lg"></i></a>
+            <a href="www.linkedin.com/in/benweberswe"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+    <script src="/js/actions.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Core Links + Font Awesome -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="font-awesome" href="/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Final Project</title>
+</head>
+<!--
+    Final Project Portfolio
+    Benjamin Weber
+    weberbj
+-->
+
+<!-- Homepage -->
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+            <li class="item"><a href="homepage.html">Home</a></li>
+            <li class="item"><a href="resumepage.html">Resume</a></li>
+            <li class="item"><a href="projectspage.html">Projects</a></li>
+            <li class="item"><a href="apppage.html">App</a></li>
+            <li class="item"><a href="appage.html">Meals</a></li>
+        </ul>
+    </nav>
+
+    <article class="banner">
+        <div class="portrait">
+            <a href="homepage.html">
+                <img src="/images/personal_portrait.jpg" alt="picture of me">
+            </a>
+        </div>
+    </article>
+
+    <div class="container">
+
+
+
+        <article class="content">
+
+            <h1 class="title">About Me</h1>
+            <aside class="general">
+                <div class="topic">
+                    <h1><u>Background</u></h1>
+                    <p>I am a senior at Indiana University with a 3.80GPA looking to start my professional career. I
+                        started off
+                        getting my associates degree from Ivy Tech because I didn't know what path I wanted to take.
+                        Since then
+                        I've built applications, databases, and programs looking to have the biggest impact I can on
+                        those around me.
+                    </p>
+                </div>
+                <div class="topic">
+                    <h1><u>Highlights</u></h1>
+                    <p>I am an Eagle Scout and made the Dean's list in 2020.</p>
+                </div>
+                <div class="topic">
+                    <h1><u>Hobbies</u></h1>
+                    <p>My hobbies are playing video games like Dark Souls and League of Legends. Otherwise I like to
+                        learn new programming concepts
+                        like .NET application development and Salesforce development. Most of my time is spent looking
+                        to prepare myself for a professional
+                        career and the job search.
+                    </p>
+                </div>
+            </aside>
+
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="email">
+            <h4>Email:</h4>
+            <a href="mailto:benweberswe@gmail.com">
+                <address>benweberswe@gmail.com</address>
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/ben.weber.509/"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://github.com/kerenin95"><i class="fab fa-github fa-lg"></i></a>
+            <a href="www.linkedin.com/in/benweberswe"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+    <script src="/js/actions.js"></script>
+</body>
+
+
+</html>

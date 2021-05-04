@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Core Links + Font Awesome -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="font-awesome" href="/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Final Project</title>
+</head>
+<!--
+    Final Project Portfolio
+    Benjamin Weber
+    weberbj
+-->
+
+<!-- Resume Page -->
+
+<body>
+    <nav>
+        <ul>
+            <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+            <li class="item"><a href="homepage.html">Home</a></li>
+            <li class="item"><a href="resumepage.html">Resume</a></li>
+            <li class="item"><a href="projectspage.html">Projects</a></li>
+            <li class="item"><a href="apppage.html">App</a></li>
+            <li class="item"><a href="appage.html">Meals</a></li>
+        </ul>
+    </nav>
+
+    <article class="banner">
+        <div class="portrait">
+            <a href="homepage.html">
+                <img src="/images/personal_portrait.jpg" alt="picture of me">
+            </a>
+        </div>
+    </article>
+
+    <div class="container">
+
+        <article class="content">
+
+            <h1 class="title">Resume</h1>
+            <aside class="general">
+                <div class="topic">
+                    <h1><u>Technical Skills</u></h1>
+                    <ul>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>Network Design</li>
+                        <li>Website Monitoring</li>
+                        <li>Amazon Web Services</li>
+                        <li>Agile Development</li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <h1><u>Engineering Projects</u></h1>
+                    <div class="project">
+                        <h3>Student Meal Point Database</h3>
+                        <p>Implemented an accurate and scalable database to maintain student on-campus meal points,
+                            yielding 18% increased access speeds over previous implementations while maintaining data
+                            security for sensitive student information
+                            Success measured by time to access database records accurately when using campus dining hall
+                            computer systems
+                            Worked with ERDs, MySQL, and PHP to create and scale database allowing the end user to
+                            access
+                            and manipulate data through a secure web portal while protecting the database from injection
+                            attacks or bad actors</p>
+                    </div>
+                    <div class="project">
+                        <h3>Digital Desktop Personal Assistant</h3>
+                        <p>Developed a desktop personal assistant using Python that increases user productivity by an
+                            average of 14-20%
+                            Accomplished this using enhanced voice recognition and speech-to-text to run common system
+                            functions and queries
+                            without the need for the user to manually enter information, freeing up time and resources
+                            for other tasks
+                            Used Python, custom API, and Python voice engine to provide enhanced functionality such as
+                            automated system
+                            commands and improved search queries to improve the interfacing between the user and their
+                            workstation</p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <h1><u>Experience</u></h1>
+                    <div class="project">
+                        <h3>S.S. Ronak (Shell)</h3>
+                        <p>Increased sales by an average of $80,000 per year over two years by managing new inventory
+                            and customer relations
+                            Sales targets exceeded as recognized in performance reviews by focusing on consumer needs
+                            and trending products, guaranteeing a community friendly outreach to help build a consistent
+                            customer base
+                            Employed techniques like community outreach, customer focused inventory, and directed sale
+                            s to grow revenue</p>
+                    </div>
+                </div>
+            </aside>
+
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="email">
+            <h4>Email:</h4>
+            <a href="mailto:benweberswe@gmail.com">
+                <address>benweberswe@gmail.com</address>
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/ben.weber.509/"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://github.com/kerenin95"><i class="fab fa-github fa-lg"></i></a>
+            <a href="www.linkedin.com/in/benweberswe"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+    <script src="/js/actions.js"></script>
+</body>
+
+
+</html>

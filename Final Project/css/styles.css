@@ -1,0 +1,358 @@
+/*
+  Final Project
+  Benjamin Weber
+  weberbj
+*/
+
+
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+body {
+    width: auto;
+    background: black;
+    background-size: cover;
+}
+h1 {
+    color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2, h3, h4, h5, h6, p {
+    margin: 0 auto;
+    color: whitesmoke;
+    font-family: 'Crimson Text', serif;
+}
+/* NAVIGATION */
+nav {
+    /* TODO: Fix the navigation to the upper-right corner of the window */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    background-color: transparent;
+    height:0;
+    right:0;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0.5em;
+    
+  }
+
+  .toggle {
+    color: #fef9ed;
+    text-align: right;
+  }
+
+  .item {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    background-color: rgba(0, 0, 0, .3);
+  }
+  .item a:hover {
+    color: #F27935;
+  }
+  .item a {
+    color: whitesmoke;
+    font-size: 36px;
+    text-decoration: none;
+  }
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+    padding-right: 15px;
+  }
+
+  /*
+    Standard Styles
+  */
+img {
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+.portrait {
+  padding: 10px;
+}
+i {
+  color: #fef9ed;
+}
+.container {
+    color: #fef9ed;
+    height: 1000px;
+    background: url("/images/bloomington-banner.jpg");
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: auto;
+}
+
+.title {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.footer {
+    background: #434B63;
+    background-size: 100%;
+    padding: 50px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 2px whitesmoke;
+}
+.general {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4em auto;
+}
+article {
+    margin: 0 30px;
+    background-color: rgba(0, 0, 0, .4);
+}
+.topic {
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: left;
+    max-width: 30%;
+}
+.topic h1 {
+  text-align: center;
+}
+
+/*
+  Footer
+*/
+.email {
+  display: flex;
+  margin: 15px;
+}
+.email h4{
+  color: antiquewhite;
+}
+address {
+  margin-left: 15px;
+  color: antiquewhite;
+}
+i{
+  margin: 10px;
+}
+.resume-title {
+  margin: 5em auto 6em auto;
+  text-align: center;
+}
+.banner {
+  background-color: #434B63;
+  margin: 0;
+}
+.content {
+  padding: 50px 0 200px 0;
+}
+
+/*
+  Number Guessing Game
+*/
+.project {
+  margin-top: 20px;
+}
+.projects-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+td {
+  padding: 30px;
+}
+#play-again {
+  color: black;
+  background-color: #fef9ed;
+  padding: 0.5em 1.0em;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  margin: 0 50px;
+}
+
+.top {
+  background-color: #fef9ed;
+  border: 3px solid black;
+  width: 50%;
+  height: 100%;
+}
+
+.headline {
+  text-align: center;
+  color: #434B63;
+}
+
+.directions {
+  text-align: center;
+  color: #434B63;
+}
+
+.resultArea {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: #434B63;
+  padding-bottom: 20px;
+}
+
+/*
+  Button container specific effects
+*/
+#buttons {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.button-area {
+  margin: 30px;
+}
+
+/*
+  Dynamically created buttons effects
+*/
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: .2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: solid 3px black;
+}
+
+.button:hover {
+  background-color: aqua;
+  cursor: pointer;
+  color: red;
+}
+/*
+  Carousel
+*/
+
+
+[hidden] {
+  display: none !important;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.recipe {
+  border-top: solid 2px black;
+  padding: 30px;
+}
+.recipe h2, h4 {
+  text-align: center;
+}
+.title1 {
+  margin: 30px;
+  background-color: slategray;
+}
+form input, button {
+  margin: 2px;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  
+}
+.img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15%;
+}
+.meals {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .container {
+    max-width: 10%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 40%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
